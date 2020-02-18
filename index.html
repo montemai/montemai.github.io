@@ -23,8 +23,9 @@
                 background-image: url(assets/logo_k.png);
                 background-position: 50% 45%;
                 background-repeat: no-repeat;
-                background-size: 55%;
+                background-size: 60%;
                 color: black;
+                line-height: 1.25em;
             }
 
             a {
@@ -42,22 +43,74 @@
                 bottom:0;
                 left:0;
                 width:100vw;
-                height: 3em;
+                padding: 2em 0;
                 text-align: center;
             }
 
             .social {
-                padding:1em;
+                display: inline-block;
+                padding: 0.5em 1em;
+                /*border: solid 1px black;*/
             }
 
+
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            .tooltip .tooltiptext {
+                text-align: left;
+                visibility: hidden;
+                background-color: black;
+                padding: 1em;
+                color: white;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 1;
+                width: 10em;
+            }
+
+
+            .tooltip .tooltiptext {
+                bottom: 100%;
+                left: 50%;
+                margin-left: -11em;
+            }
+
+            .tooltip .tooltiptext a {
+                color: inherit;
+                margin-left: 2em;
+                display: inline-block;
+            }
 
         </style>
     </head>
     <body>
         <footer>
-            <span class="social"><a target="_blank" href="https://onthecamper.tumblr.com">On the Camper Records</a></span>
+            <span class="social"><a target="_blank" href="https://www.songkick.com/artists/10116745-monte-mai">Live</a></span>
             <span class="social"><a target="_blank" href="https://www.instagram.com/_montemai_/">Instagram</a></span>
-            <span class="social"><a target="_blank" href="https://www.facebook.com/montemai/">Facebook</a></span>
+            <span class="social"><a target="_blank" href="https://www.facebook.com/montemai">Facebook</a></span>
+            <span class="social"><a target="_blank" href="https://twitter.com/monte_mai">Twitter</a></span>
+            <span class="social"><a target="_blank" href="https://montemai.bandcamp.com/">Store</a></span>
+            <span class="social"><a target="_blank" href="https://soundcloud.com/montemai">Soundcloud</a></span>
+            <span class="social"><a target="_blank" href="https://www.youtube.com/watch?v=pWKlRmGV0xs&feature=youtu.be">Videos</a></span>
+            <span class="social"><a target="_blank" href="https://lnk.site/what-you-wanna-know">Streaming</a></span>
+            <span class="social tooltip">@
+                <span class="tooltiptext">
+                    Booking: <br>
+                    <a mailto:="ildomanirecords@gmail.com">ildomanirecords<br>@gmail.com</a><br>
+                    Label: <br>
+                    <a mailto:="onthecamper@me.com">onthecamper<br>@me.com</a><br>
+                    For press enquiries<br>contact Jules: <br>
+                    <a mailto:="ildomanipress@gmail.com">ildomanipress<br>@gmail.com</a><br>
+                </span>
+            </span>
         </footer>
     </body>
 </html>
